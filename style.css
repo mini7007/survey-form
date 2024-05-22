@@ -1,0 +1,142 @@
+
+body {
+    font-family: 'Arial', sans-serif; /* Font family for the entire body */
+    background-color: #71b373; /* Background color for the body */
+    display: flex; /* Flexbox layout for the body */
+    justify-content: center; /* Centering the form horizontally */
+    align-items: center; /* Centering the form vertically */
+}
+
+.label {
+    font-weight: bold; /* Bold font weight for labels */
+}
+
+.survey-form {
+    display: flex; /* Flexbox layout for the form */
+    flex-direction: column; /* Column layout for the form elements */
+    background-color: #ffffff; /* Background color for the form */
+    border-radius: 8px; /* Rounded corners for the form */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow for the form */
+    max-width: 700px; /* Maximum width for the form */
+    width: 100%; /* Full width for the form */
+    padding: 2rem; /* Padding inside the form */
+}
+
+h1 {
+    margin-bottom: 1rem; /* Margin below the heading */
+    color: #333; /* Text color for the heading */
+    text-align: center; /* Centered text alignment */
+}
+
+p {
+    margin-bottom: 1.5rem; /* Margin below the paragraph */
+    color: #666; /* Text color for the paragraph */
+    text-align: center; /* Centered text alignment */
+}
+
+.form-group {
+    margin-bottom: 1rem; /* Margin below each form group */
+    display: flex; /* Flexbox layout for the form group */
+    flex-direction: column; /* Column layout for form group elements */
+}
+
+label {
+    margin-bottom: 0.5rem; /* Margin below the label */
+    color: #333; /* Text color for the label */
+}
+
+.input, select, textarea {
+    padding: 0.5rem; /* Padding inside the input, select, and textarea elements */
+    border: 1px solid #ccc; /* Border for the input, select, and textarea elements */
+    border-radius: 4px; /* Rounded corners for the input, select, and textarea elements */
+    font-size: 1rem; /* Font size for the input, select, and textarea elements */
+    width: 100%; /* Full width for the input, select, and textarea elements */
+}
+
+.input-email {
+    padding: 0.5rem; /* Padding inside the email input */
+    border: 1px solid #ccc; /* Border for the email input */
+    border-radius: 4px; /* Rounded corners for the email input */
+    font-size: 1rem; /* Font size for the email input */
+    width: 100%; /* Full width for the email input */
+    height: 20px; /* Height for the email input */
+}
+
+button {
+    padding: 0.75rem; /* Padding inside the button */
+    border: none; /* No border for the button */
+    border-radius: 4px; /* Rounded corners for the button */
+    background-color: #4CAF50; /* Background color for the button */
+    color: white; /* Text color for the button */
+    font-size: 1rem; /* Font size for the button */
+    cursor: pointer; /* Pointer cursor on hover */
+}
+
+button:hover {
+    background-color: #45a049; /* Background color for the button on hover */
+}
+
+.flex-parent-element {
+    display: flex; /* Flexbox layout for the parent element */
+    width: 100%; /* Full width for the parent element */
+}
+
+.flex-child-element {
+    flex: 1; /* Flex-grow property for the child element */
+    margin: 10px; /* Margin around the child element */
+}
+
+.flex-child-element:first-child {
+    margin-right: 20px; /* Extra margin to the right for the first child element */
+}
+
+/* Age radio buttons container */
+.radio-button {
+    position: relative; /* Positioning relative for the container */
+    padding: 10px; /* Padding inside the container */
+    border: 1px solid #888383; /* Border for the container */
+    border-radius: 8px; /* Rounded corners for the container */
+    margin-bottom: 10px; /* Margin below the container */
+}
+
+.age-label {
+    position: absolute; /* Absolute positioning for the age label */
+    top: -12px; /* Positioning from the top */
+    left: 20px; /* Positioning from the left */
+    background-color: #fff; /* Background color for the age label */
+    padding: 0 5px; /* Padding inside the age label */
+}
+
+/* Phone number input group */
+.phone-group {
+    display: flex; /* Flexbox layout for the phone group */
+    align-items: center; /* Centering items vertically */
+}
+
+.country-code {   
+    background-color: #f9f9f9; /* Background color for the country code */
+    font-weight: bold; /* Bold font weight for the country code */
+    padding-right: 5px; /* Right padding for the country code */
+    width: auto; /* Auto width for the country code */
+}
+
+.phone-number {
+    border: 1px solid #ccc; /* Border for the phone number input */
+    border-radius: 0 4px 4px 0; /* Rounded corners for the phone number input */
+    padding: 10px; /* Padding inside the phone number input */
+    flex-grow: 1; /* Flex-grow property for the phone number input */
+}
+
+/* Email input group */
+.email-group {
+    display: flex; /* Flexbox layout for the email group */
+    align-items: center; /* Centering items vertically */
+}
+
+.email-domain {
+    margin-left: 5px; /* Margin to the left of the email domain */
+    padding: 10px; /* Padding inside the email domain */
+    border: 1px solid #ccc; /* Border for the email domain */
+    border-radius: 4px; /* Rounded corners for the email domain */
+    background-color: #f9f9f9; /* Background color for the email domain */
+}

@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <!-- Character set declaration -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Viewport settings for responsiveness -->
+    <title>Survey Form</title>
+    <!-- Page title -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- Linking external CSS -->
+</head>
+
+<body>
+    <form class="survey-form">
+        <!-- Form container with class for styling -->
+        <h1>Survey Form</h1>
+        <!-- Form heading -->
+        <p>
+            Please fill out the following survey to help us improve our service.
+        </p>
+        <!-- Form description -->
+        <div class="flex-parent-element">
+            <!-- Parent div for flexbox layout -->
+            <div class="flex-child-element">
+                <!-- Child div for flexbox layout -->
+
+                <!-- Name field -->
+                <div class="form-group">
+                    <label class="label" for="name">Your Name</label>
+                    <!-- Label for name input -->
+                    <input class="input" type="text" id="name" name="name" placeholder="Enter your name" required />
+                    <!-- Name input field -->
+                </div>
+
+                <!-- Email field -->
+                <div class="form-group">
+                    <label class="label" for="email">Your Email Address</label>
+                    <!-- Label for email input -->
+                    <div class="email-group">
+                        <!-- Grouping email input and domain select -->
+                        <input class="input-email" type="text" id="email" name="email" placeholder="xyz123" required />
+                        <!-- Email username input -->
+                        <select class="email-domain" id="email-domain" name="email-domain" required>
+                            <!-- Email domain dropdown -->
+                            <option value="@gmail.com">@gmail.com</option>
+                            <option value="@yahoo.com">@yahoo.com</option>
+                            <option value="@outlook.com">@outlook.com</option>
+                        </select>
+                    </div>
+                </div>
+
+                <!-- Phone number field -->
+                <div class="form-group">
+                    <label for="phone" class="label">Your Phone Number</label>
+                    <!-- Label for phone number input -->
+                    <div class="phone-group">
+                        <!-- Grouping country code and phone number input -->
+                        <select class="country-code" id="country-code" name="country-code" required>
+                            <!-- Country code dropdown -->
+                            <option value="+91">+91</option>
+                            <option value="+44">+44</option>
+                            <option value="+81">+81</option>
+                            <!-- Add more country codes as needed -->
+                        </select>
+                        <input type="tel" class="phone-number" id="phone" name="phone" placeholder="0000000000"
+                            required />
+                        <!-- Phone number input -->
+                    </div>
+                </div>
+
+                <!-- Location field -->
+                <div class="form-group">
+                    <label for="location" class="label">Where Do You Live?</label>
+                    <!-- Label for location select -->
+                    <select id="location" name="location" required>
+                        <!-- Location dropdown -->
+                        <option value="" disabled selected>Select</option>
+                        <option value="city1">Delhi</option>
+                        <option value="city2">Mumbai</option>
+                        <option value="city3">Chicago</option>
+                    </select>
+                </div>
+
+                <!-- Age radio buttons -->
+                <div class="radio-button">
+                    <label class="age-label">Age</label>
+                    <!-- Age radio button group label -->
+                    <div class="age-group">
+                        <!-- Grouping age radio buttons -->
+                        <label class="label"><input type="radio" name="age" value="15-20" required />
+                            15-20</label><br />
+                        <!-- Age 15-20 -->
+                        <label class="label"><input type="radio" name="age" value="20-30" required />
+                            20-30</label><br />
+                        <!-- Age 20-30 -->
+                        <label class="label"><input type="radio" name="age" value="31-40" required />
+                            31-40</label><br />
+                        <!-- Age 31-40 -->
+                        <label class="label"><input type="radio" name="age" value="41-50" required />
+                            41-50</label><br />
+                        <!-- Age 41-50 -->
+                        <label class="label"><input type="radio" name="age" value="prefer-not-to-say" required />
+                            Prefer not to say</label>
+                        <!-- Prefer not to say -->
+                    </div>
+                </div>
+
+                <!-- Coding proficiency radio buttons -->
+                <div class="form-group">
+                    <label for="proficiency" class="label">How would you rate your proficiency in coding:</label>
+                    <!-- Proficiency radio button group label -->
+                    <div class="radio-group">
+                        <!-- Grouping proficiency radio buttons -->
+                        <label class="label"><input type="radio" id="beginner" name="proficiency" value="beginner"
+                                required />
+                            Beginner</label><br />
+                        <!-- Beginner -->
+                        <label class="label"><input type="radio" id="intermediate" name="proficiency"
+                                value="intermediate" required />
+                            Intermediate</label><br />
+                        <!-- Intermediate -->
+                        <label class="label"><input type="radio" id="advance" name="proficiency" value="advance"
+                                required />
+                            Advance</label><br />
+                        <!-- Advance -->
+                    </div>
+                </div>
+            </div>
+            <div class="flex-child-element">
+                <!-- Second column in flexbox layout -->
+
+                <!-- Coding contest participation radio buttons -->
+                <div class="form-group">
+                    <label class="label">Have You Ever Appeared in any coding contest?</label>
+                    <!-- Coding contest participation label -->
+                    <div class="radio-group">
+                        <!-- Grouping coding contest participation radio buttons -->
+                        <label class="label"><input type="radio" name="coding-contest" value="yes" required />
+                            Yes</label><br />
+                        <!-- Yes -->
+                        <label class="label"><input type="radio" name="coding-contest" value="no" required />
+                            No</label>
+                        <!-- No -->
+                    </div>
+                </div>
+
+                <!-- Passion for coding textarea -->
+                <div class="form-group">
+                    <label for="passion" class="label">Discuss what drives your passion for coding and outline your
+                        aspirations in the field.</label>
+                    <!-- Passion textarea label -->
+                    <textarea id="passion" name="passion" rows="4" required></textarea>
+                    <!-- Passion textarea -->
+                </div>
+
+                <!-- Challenges faced while coding textarea -->
+                <div class="form-group">
+                    <label for="challenges" class="label">What are some of the challenges you face while coding?</label>
+                    <!-- Challenges textarea label -->
+                    <textarea id="challenges" name="challenges" rows="4" required></textarea>
+                    <!-- Challenges textarea -->
+                </div>
+
+                <!-- Data Structures understanding textarea -->
+                <div class="form-group">
+                    <label for="data-structures" class="label">Please list the Data Structures you have a strong
+                        understanding
+                        of.</label>
+                    <!-- Data Structures textarea label -->
+                    <textarea id="data-structures" name="data-structures" rows="4" required></textarea>
+                    <!-- Data Structures textarea -->
+                </div>
+            </div>
+        </div>
+        <div class="form-group">
+            <!-- Submit button container -->
+            <button type="submit">Submit</button>
+            <!-- Submit button -->
+        </div>
+    </form>
+</body>
+
+</html>
